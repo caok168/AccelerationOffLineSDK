@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC7A7AAB-A982-42C4-AB9F-13DCC971E320}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AccelerationOffLineCommon</RootNamespace>
+    <AssemblyName>AccelerationOffLineCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AccelerationOffLineCommon.Bat.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bat.cs" />
+    <Compile Include="Cit.cs" />
+    <Compile Include="DeviationAnalysis.cs" />
+    <Compile Include="Model\Request\AnalysisRequest.cs" />
+    <Compile Include="Model\Responsse\BatResult.cs" />
+    <Compile Include="Model\Request\BatRequest.cs" />
+    <Compile Include="Model\Request\AvgRequest.cs" />
+    <Compile Include="MultiWave.cs" />
+    <Compile Include="PowerSpectrum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\Request\BaseRequest.cs" />
+    <Compile Include="Model\Request\CITRequest.cs" />
+    <Compile Include="Model\Request\MaxRequest.cs" />
+    <Compile Include="Model\Request\MultiWaveRequest.cs" />
+    <Compile Include="Model\Request\PeakRequest.cs" />
+    <Compile Include="Model\Request\PowerSpectrumRequest.cs" />
+    <Compile Include="Model\Request\RmsRequest.cs" />
+    <Compile Include="Model\Responsse\AvgResult.cs" />
+    <Compile Include="Model\Responsse\MaxResult.cs" />
+    <Compile Include="Model\Responsse\MultiWaveResult.cs" />
+    <Compile Include="Model\Responsse\PeakResult.cs" />
+    <Compile Include="Model\Responsse\PowerSpectrumResult.cs" />
+    <Compile Include="Model\Responsse\Response.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BatProcess\BatProcess.csproj">
+      <Project>{466eedc3-9bbb-45c7-a53e-4c691982c46c}</Project>
+      <Name>BatProcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CitProcess\CitProcess.csproj">
+      <Project>{e1182686-33a8-463f-8251-a64eddb56e3e}</Project>
+      <Name>CitProcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeviationAnalysisProcess\DeviationAnalysisProcess.csproj">
+      <Project>{6539b056-eca5-4289-924e-5114cf916dbd}</Project>
+      <Name>DeviationAnalysisProcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MultiWaveProcess\MultiWaveProcess.csproj">
+      <Project>{ab54ea49-680c-4ec9-a570-22192fff774b}</Project>
+      <Name>MultiWaveProcess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PowerSpectrumProcess\PowerSpectrumProcess.csproj">
+      <Project>{ca9a3db5-f4e2-4081-b7df-e763d360932d}</Project>
+      <Name>PowerSpectrumProcess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\Newtonsoft.Json.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AccelerationOffLineCommon.Bat.snk" />
+    <None Include="AccelerationOffLineCommon.Cit.snk" />
+    <None Include="AccelerationOffLineCommon.DeviationAnalysis.snk" />
+    <None Include="AccelerationOffLineCommon.MultiWave.snk" />
+    <None Include="AccelerationOffLineCommon.PowerSpectrum.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

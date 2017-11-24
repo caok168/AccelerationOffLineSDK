@@ -1,0 +1,881 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CitFileProcess.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CitFileProcess.Fakes.ShimCitFileHelper">
+            <summary>CitFileProcess.CitFileHelper 的填充码类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimCitFileHelper.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimCitFileHelper.#ctor(CitFileProcess.CitFileHelper)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimCitFileHelper.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimCitFileHelper.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.ByteXORByteByteArray">
+            <summary>设置 CitFileHelper.ByteXORByte(Byte[] b) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.BytesOfOneSamplePointInt32">
+            <summary>设置 CitFileHelper.BytesOfOneSamplePoint(Int32 channelNum) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.ChannelExchangeListOfDataChannelInfoStringStringBoolean">
+            <summary>设置 CitFileHelper.ChannelExchange(List`1&lt;DataChannelInfo&gt; m_dciL, String channel_L, String channel_R, Boolean isInverted) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.Constructor">
+            <summary>设置 CitFileHelper.CitFileHelper() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetAllChannelDataInRangeString">
+            <summary>设置 CitFileHelper.GetAllChannelDataInRange(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetAllChannelDataInRangeStringInt64Int32">
+            <summary>设置 CitFileHelper.GetAllChannelDataInRange(String citFile, Int64 startFilePos, Int32 sampleNum) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetAllChannelDataInRangeStringInt64Int32Int64Ref">
+            <summary>设置 CitFileHelper.GetAllChannelDataInRange(String citFile, Int64 startFilePos, Int32 sampleNum, Int64&amp; endFilePos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetAllChannelDataInRangeStringInt64Int64">
+            <summary>设置 CitFileHelper.GetAllChannelDataInRange(String citFile, Int64 startFilePos, Int64 endFilePos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetBytesFromChannelDataInfoListListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.GetBytesFromChannelDataInfoList(List`1&lt;DataChannelInfo&gt; m_dciL) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetBytesFromDataHeadInfoDataHeadInfo">
+            <summary>设置 CitFileHelper.GetBytesFromDataHeadInfo(DataHeadInfo structCITHead) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelDataString">
+            <summary>设置 CitFileHelper.GetChannelData(String sSouceFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelIdStringString">
+            <summary>设置 CitFileHelper.GetChannelId(String channelName, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelInfoByteArrayInt32">
+            <summary>设置 CitFileHelper.GetChannelInfo(Byte[] bDataInfo, Int32 start) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelNameCnInt32String">
+            <summary>设置 CitFileHelper.GetChannelNameCn(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelNameEnInt32String">
+            <summary>设置 CitFileHelper.GetChannelNameEn(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelOffsetInt32String">
+            <summary>设置 CitFileHelper.GetChannelOffset(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelOffsetStringString">
+            <summary>设置 CitFileHelper.GetChannelOffset(String enname, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelScaleInt32String">
+            <summary>设置 CitFileHelper.GetChannelScale(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelScaleStringString">
+            <summary>设置 CitFileHelper.GetChannelScale(String enname, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelUnitInt32String">
+            <summary>设置 CitFileHelper.GetChannelUnit(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetChannelUnitStringString">
+            <summary>设置 CitFileHelper.GetChannelUnit(String enname, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetCurrentPositionStringSingle">
+            <summary>设置 CitFileHelper.GetCurrentPosition(String citFile, Single mile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetDataChannelInfoHeadString">
+            <summary>设置 CitFileHelper.GetDataChannelInfoHead(String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetDataInfoHead2ByteArray">
+            <summary>设置 CitFileHelper.GetDataInfoHead2(Byte[] bDataInfo) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetDataInfoHeadByteArray">
+            <summary>设置 CitFileHelper.GetDataInfoHead(Byte[] bDataInfo) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetDataInfoHeadString">
+            <summary>设置 CitFileHelper.GetDataInfoHead(String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetExtraInfoString">
+            <summary>设置 CitFileHelper.GetExtraInfo(String citFilePath) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetFileLengthString">
+            <summary>设置 CitFileHelper.GetFileLength(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadChannelNumberString">
+            <summary>设置 CitFileHelper.GetHeadChannelNumber(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadDataTypeString">
+            <summary>设置 CitFileHelper.GetHeadDataType(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadDataVersionString">
+            <summary>设置 CitFileHelper.GetHeadDataVersion(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadDateString">
+            <summary>设置 CitFileHelper.GetHeadDate(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadDirString">
+            <summary>设置 CitFileHelper.GetHeadDir(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadKmFromString">
+            <summary>设置 CitFileHelper.GetHeadKmFrom(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadKmIncString">
+            <summary>设置 CitFileHelper.GetHeadKmInc(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadKmToString">
+            <summary>设置 CitFileHelper.GetHeadKmTo(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadRunDirString">
+            <summary>设置 CitFileHelper.GetHeadRunDir(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadSmaleRateString">
+            <summary>设置 CitFileHelper.GetHeadSmaleRate(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadTimeString">
+            <summary>设置 CitFileHelper.GetHeadTime(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadTrackCodeString">
+            <summary>设置 CitFileHelper.GetHeadTrackCode(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadTrackNameString">
+            <summary>设置 CitFileHelper.GetHeadTrackName(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetHeadTrainString">
+            <summary>设置 CitFileHelper.GetHeadTrain(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetMilesDataBinaryReaderInt64Int64">
+            <summary>设置 CitFileHelper.GetMilesData(BinaryReader br, Int64 startPos, Int64 endPos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetMilesDataString">
+            <summary>设置 CitFileHelper.GetMilesData(String citFilePath) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetMilesDataStringInt64Int64">
+            <summary>设置 CitFileHelper.GetMilesData(String citFilePath, Int64 startPos, Int64 endPos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetPositonsString">
+            <summary>设置 CitFileHelper.GetPositons(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetSamplePointStartOffsetInt32">
+            <summary>设置 CitFileHelper.GetSamplePointStartOffset(Int32 channelNumber) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetSamplePointStartOffsetInt32Int32">
+            <summary>设置 CitFileHelper.GetSamplePointStartOffset(Int32 channelNumber, Int32 extraInfoSize) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetSingleChannelDataBinaryReaderInt32Int64Int64">
+            <summary>设置 CitFileHelper.GetSingleChannelData(BinaryReader br, Int32 iChannelNumber, Int64 startPos, Int64 endPos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetSingleChannelDataStringInt32">
+            <summary>设置 CitFileHelper.GetSingleChannelData(String sSourceFile, Int32 iChannelNumber) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetSingleChannelDataStringInt32Int64Int64">
+            <summary>设置 CitFileHelper.GetSingleChannelData(String sSourceFile, Int32 iChannelNumber, Int64 startPos, Int64 endPos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.GetSingleChannelDataStringStringDoubleDouble">
+            <summary>设置 CitFileHelper.GetSingleChannelData(String sSourceFile, String channelName, Double startMile, Double endMile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.IsCitKmIncStringBooleanRef">
+            <summary>设置 CitFileHelper.IsCitKmInc(String citFileName, Boolean&amp; isKmInc) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.IsEncryptDataHeadInfo">
+            <summary>设置 CitFileHelper.IsEncrypt(DataHeadInfo dhi) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.ModifyCitMergeKmIncString">
+            <summary>设置 CitFileHelper.ModifyCitMergeKmInc(String citFileName) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.ModifyCitReverseToForwardString">
+            <summary>设置 CitFileHelper.ModifyCitReverseToForward(String citFileName) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.QueryDataInfoHeadString">
+            <summary>设置 CitFileHelper.QueryDataInfoHead(String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteChannelDataFloatStringListOfSingleArray">
+            <summary>设置 CitFileHelper.WriteChannelDataFloat(String citFileName, List`1&lt;Single[]&gt; channelData) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteChannelDataStringListOfDoubleArray">
+            <summary>设置 CitFileHelper.WriteChannelData(String citFileName, List`1&lt;Double[]&gt; channelData) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteCitFileHeadInfoStringDataHeadInfoListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.WriteCitFileHeadInfo(String citFileName, DataHeadInfo dataHeadInfo, List`1&lt;DataChannelInfo&gt; channelList) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteCitFileStringDataHeadInfoListOfDataChannelInfoStringListOfByteArray">
+            <summary>设置 CitFileHelper.WriteCitFile(String citFileName, DataHeadInfo dataHeadInfo, List`1&lt;DataChannelInfo&gt; channelList, String extraInfo, List`1&lt;Byte[]&gt; channelData) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteCitFileStringDataHeadInfoListOfDataChannelInfoStringListOfDoubleArray">
+            <summary>设置 CitFileHelper.WriteCitFile(String citFile, DataHeadInfo fi, List`1&lt;DataChannelInfo&gt; channelList, String extraInfo, List`1&lt;Double[]&gt; arrayDone) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteCitFileStringStringListOfDoubleArray">
+            <summary>设置 CitFileHelper.WriteCitFile(String citFileName, String newCitFileName, List`1&lt;Double[]&gt; arrayDone) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteCitFileTempStringDataHeadInfoListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.WriteCitFileTemp(String citFileName, DataHeadInfo dataHeadInfo, List`1&lt;DataChannelInfo&gt; channelList) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteDataChannelInfoHeadStringListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.WriteDataChannelInfoHead(String citFileName, List`1&lt;DataChannelInfo&gt; channelList) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteDataExtraInfoStringString">
+            <summary>设置 CitFileHelper.WriteDataExtraInfo(String citFileName, String extraInfo) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteDataInfoHeadStringDataHeadInfo">
+            <summary>设置 CitFileHelper.WriteDataInfoHead(String citFileName, DataHeadInfo dataHeadInfo) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadDataTypeStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadDataType(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadDataVersionStringString">
+            <summary>设置 CitFileHelper.WriteHeadDataVersion(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadDateStringString">
+            <summary>设置 CitFileHelper.WriteHeadDate(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadDirStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadDir(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadKmFromStringSingle">
+            <summary>设置 CitFileHelper.WriteHeadKmFrom(String citFileName, Single value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadKmIncStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadKmInc(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadKmToStringSingle">
+            <summary>设置 CitFileHelper.WriteHeadKmTo(String citFileName, Single value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadRunDirStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadRunDir(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadSmaleRateStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadSmaleRate(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadTimeStringString">
+            <summary>设置 CitFileHelper.WriteHeadTime(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadTrackCodeStringString">
+            <summary>设置 CitFileHelper.WriteHeadTrackCode(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadTrackNameStringString">
+            <summary>设置 CitFileHelper.WriteHeadTrackName(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.WriteHeadTrainStringString">
+            <summary>设置 CitFileHelper.WriteHeadTrain(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.dciLGet">
+            <summary>设置 CitFileHelper.get_dciL() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.dciLSetListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.set_dciL(List`1&lt;DataChannelInfo&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.dhiGet">
+            <summary>设置 CitFileHelper.get_dhi() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.dhiSetDataHeadInfo">
+            <summary>设置 CitFileHelper.set_dhi(DataHeadInfo value) 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.BytesOfOneSamplePointInt32">
+            <summary>设置 CitFileHelper.BytesOfOneSamplePoint(Int32 channelNum) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.ChannelExchangeListOfDataChannelInfoStringStringBoolean">
+            <summary>设置 CitFileHelper.ChannelExchange(List`1&lt;DataChannelInfo&gt; m_dciL, String channel_L, String channel_R, Boolean isInverted) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetAllChannelDataInRangeString">
+            <summary>设置 CitFileHelper.GetAllChannelDataInRange(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetAllChannelDataInRangeStringInt64Int32">
+            <summary>设置 CitFileHelper.GetAllChannelDataInRange(String citFile, Int64 startFilePos, Int32 sampleNum) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetAllChannelDataInRangeStringInt64Int32Int64Ref">
+            <summary>设置 CitFileHelper.GetAllChannelDataInRange(String citFile, Int64 startFilePos, Int32 sampleNum, Int64&amp; endFilePos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetAllChannelDataInRangeStringInt64Int64">
+            <summary>设置 CitFileHelper.GetAllChannelDataInRange(String citFile, Int64 startFilePos, Int64 endFilePos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetBytesFromChannelDataInfoListListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.GetBytesFromChannelDataInfoList(List`1&lt;DataChannelInfo&gt; m_dciL) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetBytesFromDataHeadInfoDataHeadInfo">
+            <summary>设置 CitFileHelper.GetBytesFromDataHeadInfo(DataHeadInfo structCITHead) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelDataString">
+            <summary>设置 CitFileHelper.GetChannelData(String sSouceFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelIdStringString">
+            <summary>设置 CitFileHelper.GetChannelId(String channelName, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelInfoByteArrayInt32">
+            <summary>设置 CitFileHelper.GetChannelInfo(Byte[] bDataInfo, Int32 start) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelNameCnInt32String">
+            <summary>设置 CitFileHelper.GetChannelNameCn(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelNameEnInt32String">
+            <summary>设置 CitFileHelper.GetChannelNameEn(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelOffsetInt32String">
+            <summary>设置 CitFileHelper.GetChannelOffset(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelOffsetStringString">
+            <summary>设置 CitFileHelper.GetChannelOffset(String enname, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelScaleInt32String">
+            <summary>设置 CitFileHelper.GetChannelScale(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelScaleStringString">
+            <summary>设置 CitFileHelper.GetChannelScale(String enname, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelUnitInt32String">
+            <summary>设置 CitFileHelper.GetChannelUnit(Int32 id, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetChannelUnitStringString">
+            <summary>设置 CitFileHelper.GetChannelUnit(String enname, String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetCurrentPositionStringSingle">
+            <summary>设置 CitFileHelper.GetCurrentPosition(String citFile, Single mile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetDataChannelInfoHeadString">
+            <summary>设置 CitFileHelper.GetDataChannelInfoHead(String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetDataInfoHead2ByteArray">
+            <summary>设置 CitFileHelper.GetDataInfoHead2(Byte[] bDataInfo) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetDataInfoHeadByteArray">
+            <summary>设置 CitFileHelper.GetDataInfoHead(Byte[] bDataInfo) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetDataInfoHeadString">
+            <summary>设置 CitFileHelper.GetDataInfoHead(String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetExtraInfoString">
+            <summary>设置 CitFileHelper.GetExtraInfo(String citFilePath) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetFileLengthString">
+            <summary>设置 CitFileHelper.GetFileLength(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadChannelNumberString">
+            <summary>设置 CitFileHelper.GetHeadChannelNumber(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadDataTypeString">
+            <summary>设置 CitFileHelper.GetHeadDataType(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadDataVersionString">
+            <summary>设置 CitFileHelper.GetHeadDataVersion(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadDateString">
+            <summary>设置 CitFileHelper.GetHeadDate(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadDirString">
+            <summary>设置 CitFileHelper.GetHeadDir(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadKmFromString">
+            <summary>设置 CitFileHelper.GetHeadKmFrom(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadKmIncString">
+            <summary>设置 CitFileHelper.GetHeadKmInc(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadKmToString">
+            <summary>设置 CitFileHelper.GetHeadKmTo(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadRunDirString">
+            <summary>设置 CitFileHelper.GetHeadRunDir(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadSmaleRateString">
+            <summary>设置 CitFileHelper.GetHeadSmaleRate(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadTimeString">
+            <summary>设置 CitFileHelper.GetHeadTime(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadTrackCodeString">
+            <summary>设置 CitFileHelper.GetHeadTrackCode(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadTrackNameString">
+            <summary>设置 CitFileHelper.GetHeadTrackName(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetHeadTrainString">
+            <summary>设置 CitFileHelper.GetHeadTrain(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetMilesDataBinaryReaderInt64Int64">
+            <summary>设置 CitFileHelper.GetMilesData(BinaryReader br, Int64 startPos, Int64 endPos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetMilesDataString">
+            <summary>设置 CitFileHelper.GetMilesData(String citFilePath) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetMilesDataStringInt64Int64">
+            <summary>设置 CitFileHelper.GetMilesData(String citFilePath, Int64 startPos, Int64 endPos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetPositonsString">
+            <summary>设置 CitFileHelper.GetPositons(String citFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetSamplePointStartOffsetInt32">
+            <summary>设置 CitFileHelper.GetSamplePointStartOffset(Int32 channelNumber) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetSamplePointStartOffsetInt32Int32">
+            <summary>设置 CitFileHelper.GetSamplePointStartOffset(Int32 channelNumber, Int32 extraInfoSize) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetSingleChannelDataBinaryReaderInt32Int64Int64">
+            <summary>设置 CitFileHelper.GetSingleChannelData(BinaryReader br, Int32 iChannelNumber, Int64 startPos, Int64 endPos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetSingleChannelDataStringInt32">
+            <summary>设置 CitFileHelper.GetSingleChannelData(String sSourceFile, Int32 iChannelNumber) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetSingleChannelDataStringInt32Int64Int64">
+            <summary>设置 CitFileHelper.GetSingleChannelData(String sSourceFile, Int32 iChannelNumber, Int64 startPos, Int64 endPos) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.GetSingleChannelDataStringStringDoubleDouble">
+            <summary>设置 CitFileHelper.GetSingleChannelData(String sSourceFile, String channelName, Double startMile, Double endMile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.IsCitKmIncStringBooleanRef">
+            <summary>设置 CitFileHelper.IsCitKmInc(String citFileName, Boolean&amp; isKmInc) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.IsEncryptDataHeadInfo">
+            <summary>设置 CitFileHelper.IsEncrypt(DataHeadInfo dhi) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.ModifyCitMergeKmIncString">
+            <summary>设置 CitFileHelper.ModifyCitMergeKmInc(String citFileName) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.ModifyCitReverseToForwardString">
+            <summary>设置 CitFileHelper.ModifyCitReverseToForward(String citFileName) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.QueryDataInfoHeadString">
+            <summary>设置 CitFileHelper.QueryDataInfoHead(String sFile) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteChannelDataFloatStringListOfSingleArray">
+            <summary>设置 CitFileHelper.WriteChannelDataFloat(String citFileName, List`1&lt;Single[]&gt; channelData) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteChannelDataStringListOfDoubleArray">
+            <summary>设置 CitFileHelper.WriteChannelData(String citFileName, List`1&lt;Double[]&gt; channelData) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteCitFileHeadInfoStringDataHeadInfoListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.WriteCitFileHeadInfo(String citFileName, DataHeadInfo dataHeadInfo, List`1&lt;DataChannelInfo&gt; channelList) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteCitFileStringDataHeadInfoListOfDataChannelInfoStringListOfByteArray">
+            <summary>设置 CitFileHelper.WriteCitFile(String citFileName, DataHeadInfo dataHeadInfo, List`1&lt;DataChannelInfo&gt; channelList, String extraInfo, List`1&lt;Byte[]&gt; channelData) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteCitFileStringDataHeadInfoListOfDataChannelInfoStringListOfDoubleArray">
+            <summary>设置 CitFileHelper.WriteCitFile(String citFile, DataHeadInfo fi, List`1&lt;DataChannelInfo&gt; channelList, String extraInfo, List`1&lt;Double[]&gt; arrayDone) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteCitFileStringStringListOfDoubleArray">
+            <summary>设置 CitFileHelper.WriteCitFile(String citFileName, String newCitFileName, List`1&lt;Double[]&gt; arrayDone) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteCitFileTempStringDataHeadInfoListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.WriteCitFileTemp(String citFileName, DataHeadInfo dataHeadInfo, List`1&lt;DataChannelInfo&gt; channelList) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteDataChannelInfoHeadStringListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.WriteDataChannelInfoHead(String citFileName, List`1&lt;DataChannelInfo&gt; channelList) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteDataExtraInfoStringString">
+            <summary>设置 CitFileHelper.WriteDataExtraInfo(String citFileName, String extraInfo) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteDataInfoHeadStringDataHeadInfo">
+            <summary>设置 CitFileHelper.WriteDataInfoHead(String citFileName, DataHeadInfo dataHeadInfo) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadDataTypeStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadDataType(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadDataVersionStringString">
+            <summary>设置 CitFileHelper.WriteHeadDataVersion(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadDateStringString">
+            <summary>设置 CitFileHelper.WriteHeadDate(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadDirStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadDir(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadKmFromStringSingle">
+            <summary>设置 CitFileHelper.WriteHeadKmFrom(String citFileName, Single value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadKmIncStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadKmInc(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadKmToStringSingle">
+            <summary>设置 CitFileHelper.WriteHeadKmTo(String citFileName, Single value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadRunDirStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadRunDir(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadSmaleRateStringInt32">
+            <summary>设置 CitFileHelper.WriteHeadSmaleRate(String citFileName, Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadTimeStringString">
+            <summary>设置 CitFileHelper.WriteHeadTime(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadTrackCodeStringString">
+            <summary>设置 CitFileHelper.WriteHeadTrackCode(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadTrackNameStringString">
+            <summary>设置 CitFileHelper.WriteHeadTrackName(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.WriteHeadTrainStringString">
+            <summary>设置 CitFileHelper.WriteHeadTrain(String citFileName, String value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.dciLGet">
+            <summary>设置 CitFileHelper.get_dciL() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.dciLSetListOfDataChannelInfo">
+            <summary>设置 CitFileHelper.set_dciL(List`1&lt;DataChannelInfo&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.dhiGet">
+            <summary>设置 CitFileHelper.get_dhi() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimCitFileHelper.AllInstances.dhiSetDataHeadInfo">
+            <summary>设置 CitFileHelper.set_dhi(DataHeadInfo value) 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataChannelInfo">
+            <summary>CitFileProcess.DataChannelInfo 的填充码类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataChannelInfo.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataChannelInfo.#ctor(CitFileProcess.DataChannelInfo)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataChannelInfo.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataChannelInfo.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataChannelInfo.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataChannelInfo.Constructor">
+            <summary>设置 DataChannelInfo.DataChannelInfo() 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataChannelInfo.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataChannelOffset">
+            <summary>CitFileProcess.DataChannelOffset 的填充码类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataChannelOffset.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataChannelOffset.#ctor(CitFileProcess.DataChannelOffset)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataChannelOffset.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataChannelOffset.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataChannelOffset.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataChannelOffset.Constructor">
+            <summary>设置 DataChannelOffset.DataChannelOffset() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataChannelOffset.StaticConstructor">
+            <summary>设置 DataChannelOffset.DataChannelOffset() 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataChannelOffset.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataHeadInfo">
+            <summary>CitFileProcess.DataHeadInfo 的填充码类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataHeadInfo.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataHeadInfo.#ctor(CitFileProcess.DataHeadInfo)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataHeadInfo.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataHeadInfo.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataHeadInfo.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataHeadInfo.Constructor">
+            <summary>设置 DataHeadInfo.DataHeadInfo() 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataHeadInfo.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataHeadOffset">
+            <summary>CitFileProcess.DataHeadOffset 的填充码类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataHeadOffset.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataHeadOffset.#ctor(CitFileProcess.DataHeadOffset)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataHeadOffset.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataHeadOffset.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataHeadOffset.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataHeadOffset.Constructor">
+            <summary>设置 DataHeadOffset.DataHeadOffset() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataHeadOffset.StaticConstructor">
+            <summary>设置 DataHeadOffset.DataHeadOffset() 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataHeadOffset.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataOffset">
+            <summary>CitFileProcess.DataOffset 的填充码类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataOffset.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataOffset.#ctor(CitFileProcess.DataOffset)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataOffset.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimDataOffset.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataOffset.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataOffset.Constructor">
+            <summary>设置 DataOffset.DataOffset() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimDataOffset.StaticConstructor">
+            <summary>设置 DataOffset.DataOffset() 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimDataOffset.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimEncryption">
+            <summary>CitFileProcess.Encryption 的填充码类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimEncryption.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimEncryption.#ctor(CitFileProcess.Encryption)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimEncryption.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimEncryption.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimEncryption.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimEncryption.Constructor">
+            <summary>设置 Encryption.Encryption() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimEncryption.IsEncryptionString">
+            <summary>设置 Encryption.IsEncryption(String str) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimEncryption.TranslateByte">
+            <summary>设置 Encryption.Translate(Byte bTranslateData) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimEncryption.TranslateByteArray">
+            <summary>设置 Encryption.Translate(Byte[] bTranslateData) 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimEncryption.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimWaveMeter">
+            <summary>CitFileProcess.WaveMeter 的填充码类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimWaveMeter.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimWaveMeter.#ctor(CitFileProcess.WaveMeter)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimWaveMeter.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.ShimWaveMeter.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.Constructor">
+            <summary>设置 WaveMeter.WaveMeter() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.KmGet">
+            <summary>设置 WaveMeter.get_Km() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.KmSetSingle">
+            <summary>设置 WaveMeter.set_Km(Single value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.MeterGet">
+            <summary>设置 WaveMeter.get_Meter() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.MeterSetSingle">
+            <summary>设置 WaveMeter.set_Meter(Single value) 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.ShimWaveMeter.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.AllInstances.KmGet">
+            <summary>设置 WaveMeter.get_Km() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.AllInstances.KmSetSingle">
+            <summary>设置 WaveMeter.set_Km(Single value) 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.AllInstances.MeterGet">
+            <summary>设置 WaveMeter.get_Meter() 的 填充码</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.ShimWaveMeter.AllInstances.MeterSetSingle">
+            <summary>设置 WaveMeter.set_Meter(Single value) 的 填充码</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.StubCitFileHelper">
+            <summary>CitFileProcess.CitFileHelper 的存根类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubCitFileHelper.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubCitFileHelper.InitializeStub">
+            <summary>初始化 type StubCitFileHelper 的新实例</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubCitFileHelper.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubCitFileHelper.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubCitFileHelper.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.StubDataChannelInfo">
+            <summary>CitFileProcess.DataChannelInfo 的存根类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataChannelInfo.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataChannelInfo.InitializeStub">
+            <summary>初始化 type StubDataChannelInfo 的新实例</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataChannelInfo.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataChannelInfo.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataChannelInfo.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.StubDataChannelOffset">
+            <summary>CitFileProcess.DataChannelOffset 的存根类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataChannelOffset.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataChannelOffset.InitializeStub">
+            <summary>初始化 type StubDataChannelOffset 的新实例</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataChannelOffset.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataChannelOffset.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataChannelOffset.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.StubDataHeadInfo">
+            <summary>CitFileProcess.DataHeadInfo 的存根类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataHeadInfo.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataHeadInfo.InitializeStub">
+            <summary>初始化 type StubDataHeadInfo 的新实例</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataHeadInfo.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataHeadInfo.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataHeadInfo.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.StubDataHeadOffset">
+            <summary>CitFileProcess.DataHeadOffset 的存根类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataHeadOffset.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataHeadOffset.InitializeStub">
+            <summary>初始化 type StubDataHeadOffset 的新实例</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataHeadOffset.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataHeadOffset.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataHeadOffset.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.StubDataOffset">
+            <summary>CitFileProcess.DataOffset 的存根类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataOffset.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubDataOffset.InitializeStub">
+            <summary>初始化 type StubDataOffset 的新实例</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataOffset.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataOffset.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubDataOffset.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.StubEncryption">
+            <summary>CitFileProcess.Encryption 的存根类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubEncryption.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubEncryption.InitializeStub">
+            <summary>初始化 type StubEncryption 的新实例</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubEncryption.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubEncryption.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubEncryption.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:CitFileProcess.Fakes.StubWaveMeter">
+            <summary>CitFileProcess.WaveMeter 的存根类型</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubWaveMeter.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CitFileProcess.Fakes.StubWaveMeter.InitializeStub">
+            <summary>初始化 type StubWaveMeter 的新实例</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubWaveMeter.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubWaveMeter.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CitFileProcess.Fakes.StubWaveMeter.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+    </members>
+</doc>
