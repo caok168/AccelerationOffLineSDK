@@ -30,17 +30,7 @@ namespace Test
 
         #region 离线加速度
 
-        private void btnMax_Click(object sender, EventArgs e)
-        {
-            AccelerationOffLineCommon.Bat bat = new AccelerationOffLineCommon.Bat();
-            AccelerationOffLineCommon.Model.MaxRequest max = new AccelerationOffLineCommon.Model.MaxRequest();
-            max.path = @"H:\工作文件汇总\铁科院\程序\离线加速度\test\CitData_160612060534_CHSS_11_11.cit";
-            max.exportPath = @"H:\工作文件汇总\铁科院\程序\离线加速度\test\";
-            max.sectionLen = 160;
-            max.isCreateIdf = false;
-            string json = JsonConvert.SerializeObject(max);
-            string result = bat.ProcessMax(json);
-        }
+        #region 批处理
 
         private void btnRms_Click(object sender, EventArgs e)
         {
@@ -59,6 +49,41 @@ namespace Test
             string json = JsonConvert.SerializeObject(rms);
             string result = bat.ProcessRms(json);
 
+        }
+
+        private void btnMax_Click(object sender, EventArgs e)
+        {
+            AccelerationOffLineCommon.Bat bat = new AccelerationOffLineCommon.Bat();
+            AccelerationOffLineCommon.Model.MaxRequest max = new AccelerationOffLineCommon.Model.MaxRequest();
+            max.path = @"H:\工作文件汇总\铁科院\程序\离线加速度\test\CitData_160612060534_CHSS_11_11.cit";
+            max.exportPath = @"H:\工作文件汇总\铁科院\程序\离线加速度\test\";
+            max.sectionLen = 160;
+            max.isCreateIdf = false;
+            string json = JsonConvert.SerializeObject(max);
+            string result = bat.ProcessMax(json);
+        }
+
+        private void btnAvg_Click(object sender, EventArgs e)
+        {
+            AccelerationOffLineCommon.Bat bat = new AccelerationOffLineCommon.Bat();
+            AccelerationOffLineCommon.Model.BaseRequest max = new AccelerationOffLineCommon.Model.BaseRequest();
+            max.path = @"H:\工作文件汇总\铁科院\程序\离线加速度\离线加速度dll\测试\CitData_170907214945_CGZX_11_Rms.idf";
+            //max.path = @"F:\个人文件\铁路\工程代码\离线加速度\离线加速度dll平台开发\数据\CitData_160612202839_GZXS_11_Rms.idf";
+
+            string json = JsonConvert.SerializeObject(max);
+            string result = bat.ProcessAvg(json);
+        }
+
+        private void btnPeak_Click(object sender, EventArgs e)
+        {
+            AccelerationOffLineCommon.Bat bat = new AccelerationOffLineCommon.Bat();
+            AccelerationOffLineCommon.Model.PeakRequest peak = new AccelerationOffLineCommon.Model.PeakRequest();
+            peak.path = @"H:\\工作文件汇总\\铁科院\\程序\\离线加速度\\cit\\CitData_160612060534_CHSS_11_11_Rms.idf";
+            peak.segavgs = new double[] { 0.673, 0.786, 0.819 };
+
+            string json = JsonConvert.SerializeObject(peak);
+
+            string result = bat.ProcessPeak(json);
         }
 
         private void btnBatProcess_Click(object sender, EventArgs e)
@@ -80,17 +105,9 @@ namespace Test
             string result = bat.Process(json);
         }
 
-        private void btnPeak_Click(object sender, EventArgs e)
-        {
-            AccelerationOffLineCommon.Bat bat = new AccelerationOffLineCommon.Bat();
-            AccelerationOffLineCommon.Model.PeakRequest peak = new AccelerationOffLineCommon.Model.PeakRequest();
-            peak.path = @"H:\\工作文件汇总\\铁科院\\程序\\离线加速度\\cit\\CitData_160612060534_CHSS_11_11_Rms.idf";
-            peak.segavgs = new double[] { 0.673, 0.786, 0.819 };
+        #endregion
 
-            string json = JsonConvert.SerializeObject(peak);
 
-            string result = bat.ProcessPeak(json);
-        }
 
         private void btnAnalysis_Click(object sender, EventArgs e)
         {
@@ -108,16 +125,7 @@ namespace Test
             string result = analysisProcess.Process(json);
         }
 
-        private void btnAvg_Click(object sender, EventArgs e)
-        {
-            AccelerationOffLineCommon.Bat bat = new AccelerationOffLineCommon.Bat();
-            AccelerationOffLineCommon.Model.BaseRequest max = new AccelerationOffLineCommon.Model.BaseRequest();
-            max.path = @"H:\工作文件汇总\铁科院\程序\离线加速度\离线加速度dll\测试\CitData_170907214945_CGZX_11_Rms.idf";
-            //max.path = @"F:\个人文件\铁路\工程代码\离线加速度\离线加速度dll平台开发\数据\CitData_160612202839_GZXS_11_Rms.idf";
-            
-            string json = JsonConvert.SerializeObject(max);
-            string result = bat.ProcessAvg(json);
-        }
+        
 
         private void btnExportTxt_Click(object sender, EventArgs e)
         {
