@@ -196,6 +196,11 @@ namespace Test
             request.invalidIdfFilePath = @"F:\个人文件\铁路\工程代码\轨检\data\轨检cit\上行减里程\GNHS-HANGZHOU-NANJING-14052016-175302-1.idf";
             request.exportFilePath = @"F:\个人文件\铁路\工程代码\轨检\data\轨检cit\上行减里程\tqiResult.xls";
 
+            request.path = @"H:\工作文件汇总\铁科院\程序\轨检\data\cit\GNHS-HANGZHOU-NANJING-14052016-175302-1.cit";
+            request.mileIdfFilePath = @"H:\工作文件汇总\铁科院\程序\轨检\data\cit\GNHS-HANGZHOU-NANJING-14052016-175302-1.idf";
+            request.invalidIdfFilePath = @"H:\工作文件汇总\铁科院\程序\轨检\data\cit\GNHS-HANGZHOU-NANJING-14052016-175302-1.idf";
+            request.exportFilePath = @"H:\工作文件汇总\铁科院\程序\轨检\data\cit\tqiResult.xls";
+
             string json = JsonConvert.SerializeObject(request);
 
             string result = process.CalcTqi(json);
@@ -232,6 +237,9 @@ namespace Test
             request.sampleCount = 100000;
             request.exportTxtPath = @"F:\个人文件\铁路\testCit\1111.txt";
             request.path = @"F:\个人文件\铁路\testCit\CitData_160424063432_CNGX.cit";
+
+            request.path = @"H:\工作文件汇总\铁科院\程序\车载加速度\数据文件\CitData_160424063432_CNGX.cit";
+            request.exportTxtPath = @"H:\工作文件汇总\铁科院\程序\车载加速度\数据文件\test.txt";
             request.startMile = 1;
             request.endMile = 100;
             request.isChinese = false;
@@ -240,7 +248,7 @@ namespace Test
 
             AccelerationOffLineCommon.Cit cit = new AccelerationOffLineCommon.Cit();
             string json = "{\"sampleCount\":\"100000\",\"serviceID\":\"cit2txt\",\"exportTxtPath\":\"d:/user/赵桂东/CitData_160606204011_GJGX.txt\",\"path\":\"d:/user/赵桂东/CitData_160606204011_GJGX.cit\",\"user\":\"赵桂东\",\"channelNames\":[\"M\",\"AB_Vt_L_11\"]}";
-            cit.Export(str);
+            string result = cit.Export(str);
         }
 
     }
